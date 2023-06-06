@@ -1,0 +1,138 @@
+.btn{
+    width: 250px;
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.para1{
+    font-size: 25px;
+    margin-top: 20px;
+}
+.para2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.para3{
+    font-size: 13px;
+    margin-top: 40px;
+    
+}
+a{
+   text-decoration: none;
+}
+.icon{
+    width: 23px;
+    height: 23px;
+    /* display: flex;
+    justify-content: flex-start; */
+    margin-right: 13px;
+}
+#hide{
+   
+    text-align: center;
+}
+/* /////////////////////////////////////   header */
+.heading{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+    color: blue;
+}
+.header{
+    margin: auto;
+    padding: auto;
+}
+
+.first{
+    display: flex;
+     margin-left: 40px;
+     margin-top: 20px;
+
+}
+.car{
+    width: 20px;
+    height: 20px;
+    margin-left: 40px;
+
+}
+.he{
+    margin-left: 10px;
+}
+.small{
+    width: 65px;
+}
+.remove{
+    border: none;
+    background: none;
+    /* margin-top: 6px; */
+    margin-left: 6px;
+}
+.search{
+    width: 30px;
+}
+.forinput{
+    width: 250px;
+    height: 45px;
+    border: 2px solid black;
+    margin-left: 30px;
+    border-radius: 6px;
+    display: flex;
+}
+.second{
+    display: flex;
+    margin-left: 35px;
+    margin-top: 5px;
+
+}
+.forinput1{
+    width: 700px;
+    border: 2px solid black;
+    margin-left: 20px;
+    border-radius: 6px;
+    display: flex;
+    height: 45px;
+}
+.remove1{
+    border: none;
+    background: none;
+    /* margin-top: 6px; */
+    width: 800px;
+    
+}
+.btn2{
+    background-color: black;
+    width: 40px;
+    height: 43px;
+    margin-bottom: 20px;
+    margin-top: -1px;
+   
+}
+.resize{
+    width: 25px;
+    height: 30px;  
+}
+
+.anchor{
+    color: black;
+    text-decoration: underline;
+    margin-top: 10px;
+    font-weight: 700;
+    margin-left: 30px;
+}
+.anchor:hover{
+    color: black;
+    text-decoration: none;
+}
+.sell{
+    border: none;
+    border-radius: 20px;
+    border: 5px solid rgb(10, 186, 218);
+    font-weight: 700;
+     padding-left: 18px;
+     padding-right: 18px;
+     margin-left: 30px;
+    
+}
