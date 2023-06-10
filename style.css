@@ -42,8 +42,9 @@ a{
     color: blue;
 }
 .header{
-    margin: auto;
-    padding: auto;
+   
+    /* position: fixed; 
+    top: 0; */
 }
 
 .first{
@@ -69,6 +70,7 @@ a{
     background: none;
     /* margin-top: 6px; */
     margin-left: 6px;
+    outline: none;
 }
 .search{
     width: 30px;
@@ -100,6 +102,7 @@ a{
     background: none;
     /* margin-top: 6px; */
     width: 800px;
+    outline: none;
     
 }
 .btn2{
@@ -135,4 +138,116 @@ a{
      padding-right: 18px;
      margin-left: 30px;
     
+}
+.secondhead{
+    margin-top: 9px;
+    display: flex;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+
+}
+.an{
+    margin-left: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.slider{
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.pa{
+    font-size: 25px;
+    margin-left: 28px;
+    margin-top: 6px;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.secondcard{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 14px;
+}
+.thirdcard{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 14px;
+}
+.side{
+    margin-left: 600px;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 5px;
+    margin-top: 35px;
+}
+.add{
+    text-align: center;
+    margin-top: 20px;
+}
+.add2{
+   display: flex;
+   margin-top: 20px;
+
+}
+.ch{
+    flex-direction: row;
+    margin-left: 30px;
+}
+.down{
+    margin-top: 30px;
+    font-size: 22px;
+}
+.hee{
+    margin-top: 20px;
+}
+.control{
+    width: 120px;
+    height: 120px;
+    margin-left: 5px;
+   /* margin-top: 25px; */
+}
+.brain{
+    flex-direction: row;
+    margin-left: 20px;
+}
+.mo{
+    margin-top: 40px;
+}
+.last{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: aliceblue;
+    border: 1px solid rgb(120, 121, 122);
+}
+.logo{
+    width: 22px;
+}
+.control1{
+    margin-top: 20px;
+    width: 90px;
+}
+.brain1{
+    flex-direction: row;
+  
+}
+.sm{
+    font-size: 14px;
+    font-weight: 700;
+}
+.s{
+    font-size: 13px;
+
+}
+.final{
+    background-color: rgb(8, 59, 96);
+    display: flex;
+    justify-content: flex-end;
+
+}
+.done{
+    margin-top: 4px;
+    color: azure;
 }
