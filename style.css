@@ -1,3 +1,42 @@
+.in{
+margin-left: 50px;
+}
+.in1{
+   
+  margin-left: 50px;
+}
+.create{
+    margin-left: 50px;
+}
+
+
+
+.parent{
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+/* border: 2px solid black; */
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.in5{
+    width: 268px;
+       
+    height: 300px;
+}
+.under{
+    /* width: 270px; */
+    background-color: rgb(240, 240, 247);
+    border: 1px solid rgb(200, 196, 196);
+    border-radius: 15px;
+    margin-top: 10px;
+    
+}
+
+
 .btn{
     width: 250px;
     height: 50px;
@@ -21,6 +60,10 @@
     margin-top: 40px;
     
 }
+.user{
+    width: 40px;
+    margin-top: -8px;
+}
 a{
    text-decoration: none;
 }
@@ -43,8 +86,12 @@ a{
 }
 .header{
    
-    /* position: fixed; 
-    top: 0; */
+ position: fixed; 
+top: 0;
+z-index: 1; 
+background-color: rgb(237, 236, 235);
+padding-bottom: 15px;
+padding-right: 213px;
 }
 
 .first{
@@ -85,26 +132,34 @@ a{
 }
 .second{
     display: flex;
+    flex-wrap: wrap;
     margin-left: 35px;
     margin-top: 5px;
 
 }
 .forinput1{
-    width: 700px;
+    width: 544px;
     border: 2px solid black;
     margin-left: 20px;
     border-radius: 6px;
     display: flex;
+    flex-wrap: wrap;
     height: 45px;
 }
 .remove1{
     border: none;
     background: none;
     /* margin-top: 6px; */
-    width: 800px;
+    width: 500px;
     outline: none;
     
 }
+
+.buttons{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
 .btn2{
     background-color: black;
     width: 40px;
@@ -129,6 +184,21 @@ a{
     color: black;
     text-decoration: none;
 }
+.sell5{
+    
+    border: none;
+    outline: none;
+
+    border-radius: 20px;
+    /* border: 5px solid rgb(10, 186, 218); */
+    font-weight: 700;
+     padding-left: 18px;
+     padding-right: 18px;
+     margin-left: 10px;
+     text-decoration: none;
+     
+    
+}
 .sell{
     border: none;
     border-radius: 20px;
@@ -140,8 +210,10 @@ a{
     
 }
 .secondhead{
-    margin-top: 9px;
+    position: relative;
+    margin-top: 130px;
     display: flex;
+    flex-wrap: wrap;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 
 }
@@ -163,31 +235,36 @@ a{
 }
 .cards{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .secondcard{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 14px;
 }
 .thirdcard{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 14px;
 }
 .side{
-    margin-left: 600px;
+    justify-content: center;
+    text-align: center;
     border-radius: 5px;
     font-weight: 700;
     padding: 5px;
     margin-top: 35px;
 }
 .add{
-    text-align: center;
+
     margin-top: 20px;
 }
 .add2{
    display: flex;
+   flex-wrap: wrap;
    margin-top: 20px;
 
 }
@@ -217,6 +294,7 @@ a{
 }
 .last{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px;
     background-color: aliceblue;
@@ -244,10 +322,151 @@ a{
 .final{
     background-color: rgb(8, 59, 96);
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
 
 }
 .done{
     margin-top: 4px;
     color: azure;
+
 }
+.in{
+    text-align: center;
+
+    border-radius: 5px;
+    /* margin-left: 70px; */
+    margin-top: 30px;
+    width: 330px;
+    height: 40px;
+    border: none;
+    border:  1px solid black;
+
+}
+.in1{
+    text-align: center;
+
+    margin-top: 30px;
+    border: none;
+    border:  1px solid black;
+    border-radius: 5px;
+    /* margin-left: 70px; */
+    width: 330px;
+    height: 40px;
+}
+.create{
+    text-align: center;
+    border: none;
+    border:  1px solid black;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: rgb(62, 61, 61);
+    color: white;
+    width: 330px;
+    height: 40px;
+}
+.pa{
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+    margin-top: 17px;
+    font-size: 12px;
+}
+.center{
+    text-align: center;
+
+}
+.image{
+    width: 80px;
+    margin-left: 130px;
+}
+
+.ser{
+    margin-left: 30px;
+    width: 1300px;
+   }
+
+@media (min-width: 1001px) and (max-width: 1326px) {
+    .ser{
+     margin-left: 30px;
+     width: 1200px;
+    }
+   }
+   @media (min-width: 851px) and (max-width: 1000px) {
+    .ser{
+     margin-left: 30px;
+     width: 1000px;
+    }
+   }
+
+@media (min-width: 600px) and (max-width: 850px) {
+   .ser{
+    margin-left: 50px;
+    width: 650px;
+   }
+  }
+
+  @media (min-width: 400px) and (max-width: 599px) {
+    .ser{
+        margin-left: 10px;
+     width:380px;
+    }
+   }
+   @media (min-width: 300px) and (max-width: 399px) {
+    .ser{
+        margin-left: 30px;
+     width: 300px;
+    }
+   }
+  @media (min-width:450px) and (max-width:550px){
+   
+    .forinput1{
+        width: 400px;
+        border: 2px solid black;
+        margin-left: 20px;
+        border-radius: 6px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 45px;
+        margin-top: 20px;
+    }
+  }
+
+  @media (min-width:300px) and (max-width:449px){
+    .forinput1{
+        margin-top: 20px;
+}
+}
+   
+  @media (min-width:300px) and (max-width:449px){
+   
+    .forinput1{
+        width: 300px;
+        border: 2px solid black;
+        margin-left: 20px;
+        border-radius: 6px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 45px;
+    }
+  }
+
+  @media (min-width:300px) and (max-width:449px){
+   
+    .ph{
+        width: 340px;
+    }
+    
+  }
+
+  @media (min-width:300px) and (max-width:670px){
+   
+    #at{
+        margin-top: 20px;
+    }
+    .sell{
+        margin-top: 15px;
+
+    }
+  }
+

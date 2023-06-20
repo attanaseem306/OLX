@@ -1,77 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-
-<head>
-    <title>OLX Sell Button</title>
-   
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-        .btn{
-            width: 250px;
-            height: 50px;
-            margin-top: 10px;
-            border: none;
-            border: 2px solid black;
-            border-radius: 5px;
-            font-size: 14px;
-            font-weight: bold;
-        }
-        .para1{
-            font-size: 25px;
-            margin-top: 20px;
-        }
-        .para2{
-            font-size: 20px;
-            font-weight: 500;
-        }
-        .para3{
-            font-size: 13px;
-            margin-top: 40px;
-            
-        }
-        a{
-           text-decoration: none;
-        }
-        .icon{
-            width: 23px;
-            height: 23px;
-            /* display: flex;
-            justify-content: flex-start; */
-            margin-right: 13px;
-        }
-        #hide{
-           
-            text-align: center;
-
-        }
-    </style>
-
-</head>
-
-<body>
-     <div id="hide">
-        <img src="https://www.olx.com.pk/assets/brandIconLogin_noinline.93e8a1a9cf50902ba5250814f57810ff.svg" alt="">
-        <p class="para1">WELCOME TO OLX</p>
-        <p class="para2">The trusted community of<br> buyers and sellers.</p>
-        <button class="btn"><img class="icon" src="https://cdn4.iconfinder.com/data/icons/socialcones/508/Google-64.png"> Continue with Google</button><br>
-        <button class="btn"><img class="icon" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-64.png"> Continue with Facebook</button><br>
-        <button class="btn" > <img class="icon" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-email-64.png"> Continue with Email</button><br>
-        <button class="btn"><img class="icon" src="https://cdn4.iconfinder.com/data/icons/communication-163/32/phone-64.png"> Continue with Phone</button> 
-        <p class="para3">By continuing, you are accepting<br><a href="#"> OLX Terms of use </a> and <a href="#">Privacy Policy</a></p> 
-     </div>
-    <script>
-
-    //    var hide=document.getElementById("hide");
-    //    hide.innerHTML=`<center> </center> `
-       
-    </script>
-</body>
-
-</html>
- -->
-
-
-
 
 <!doctype html>
 <html lang="en">
@@ -83,6 +9,7 @@
 
   <link rel="stylesheet" href="style.css">
 
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -93,8 +20,9 @@
 <body>
 
 
+<!-- ///////////////////////////////////////////////////////////////////////  -->
+ 
 
-  <!-- Button trigger modal -->
 
 
   <!-- Modal -->
@@ -109,21 +37,22 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
+        <div id="mod" class="modal-body">
 
+          
 
           <div id="hide">
             <img src="https://www.olx.com.pk/assets/brandIconLogin_noinline.93e8a1a9cf50902ba5250814f57810ff.svg"
               alt="">
             <p class="para1">WELCOME TO OLX</p>
             <p class="para2">The trusted community of<br> buyers and sellers.</p>
-            <button class="btn"><img class="icon"
+            <button onclick="display()" class="btn"><img class="icon"
                 src="https://cdn4.iconfinder.com/data/icons/socialcones/508/Google-64.png"> Continue with
               Google</button><br>
             <button class="btn"><img class="icon"
                 src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-64.png">
               Continue with Facebook</button><br>
-            <button class="btn"> <img class="icon"
+            <button onclick="display()" class="btn"> <img class="icon"
                 src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-email-64.png"> Continue with
               Email</button><br>
             <button class="btn"><img class="icon"
@@ -137,13 +66,6 @@
       </div>
     </div>
   </div>
-
-  <!-- 
-/////////////////////////////   sell button -->
-  <!-- 
-     <button  data-toggle="modal" data-target="#sellModalCenter">
-        Sell</button> -->
-
 
 
   <div class="header">
@@ -168,12 +90,10 @@
 
       <div class="forinput1">
         <input placeholder="Find cars,Mobile Phones and more ..." class="remove1" type="text">
-        <button class="btn2"><img class="resize"
-            src="https://cdn3.iconfinder.com/data/icons/awesome-lineca-collection/32/magnifying-glass-64.png"></button>
       </div>
 
-      <a data-toggle="modal" data-target="#sellModalCenter" class="anchor" href="#">login</a>
-      <button class="sell" data-toggle="modal" data-target="#sellModalCenter">+SELL</button>
+      <a data-toggle="modal" id="at" data-target="#sellModalCenter"  class="anchor" href="#">login</a>
+    <button onclick="alert('login first')" class="sell">+SELL</button>
 
     </div>
 
@@ -222,160 +142,24 @@
   </div>
 
   <p class="pa">Fresh recommendations</p>
-  <div class="cards">
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="https://images.olx.com.pk/thumbnails/362865959-240x180.webp" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">RS:100000</h5>
-        <p class="card-text">new Area</p>
-        <p>all document </p>
-        <p>19 min ago</p>
-
-
+  
+  <body>
+    <div id="main" class="parent">
+      <div  class="card" style="width: 20rem;">
       </div>
-    </div>
-
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="https://images.olx.com.pk/thumbnails/357450025-240x180.webp" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Rs:5000</h5>
-        <p class="card-text">Gulshan</p>
-        <p>all document </p>
-        <p>5 min ago</p>
-
-      </div>
-    </div>
-
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="https://images.olx.com.pk/thumbnails/358085537-240x180.webp" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">RS:230000</h5>
-        <p class="card-text">korangi</p>
-        <p>all document </p>
-        <p>12 min ago</p>
-
-
-      </div>
-    </div>
-
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="https://images.olx.com.pk/thumbnails/357450025-240x180.webp" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">RS:329990</h5>
-        <p class="card-text">Location</p>
-        <p>all document </p>
-        <p>24 min ago</p>
-
-      </div>
-    </div>
-
   </div>
 
-  <div class="secondcard">
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="https://images.olx.com.pk/thumbnails/362865959-240x180.webp" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">RS:100000</h5>
-        <p class="card-text">new Area</p>
-        <p>all document </p>
-        <p>19 min ago</p>
+  
 
-
-      </div>
-    </div>
-
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="https://images.olx.com.pk/thumbnails/357450025-240x180.webp" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Rs:5000</h5>
-        <p class="card-text">Gulshan</p>
-        <p>all document </p>
-        <p>5 min ago</p>
-
-      </div>
-    </div>
-
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="https://images.olx.com.pk/thumbnails/358085537-240x180.webp" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">RS:230000</h5>
-        <p class="card-text">korangi</p>
-        <p>all document </p>
-        <p>12 min ago</p>
-
-
-      </div>
-    </div>
-
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="https://images.olx.com.pk/thumbnails/357450025-240x180.webp" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">RS:329990</h5>
-        <p class="card-text">Location</p>
-        <p>all document </p>
-        <p>24 min ago</p>
-
-      </div>
-    </div>
-  </div>
-
-
-  <div class="thirdcard">
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="https://images.olx.com.pk/thumbnails/362865959-240x180.webp" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">RS:100000</h5>
-        <p class="card-text">new Area</p>
-        <p>all document </p>
-        <p>19 min ago</p>
-
-
-      </div>
-    </div>
-
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="https://images.olx.com.pk/thumbnails/357450025-240x180.webp" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Rs:5000</h5>
-        <p class="card-text">Gulshan</p>
-        <p>all document </p>
-        <p>5 min ago</p>
-
-      </div>
-    </div>
-
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="https://images.olx.com.pk/thumbnails/358085537-240x180.webp" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">RS:230000</h5>
-        <p class="card-text">korangi</p>
-        <p>all document </p>
-        <p>12 min ago</p>
-
-
-      </div>
-    </div>
-
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="https://images.olx.com.pk/thumbnails/357450025-240x180.webp" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">RS:329990</h5>
-        <p class="card-text">Location</p>
-        <p>all document </p>
-        <p>24 min ago</p>
-
-      </div>
-    </div>
-  </div>
-
-  <button class="side">Load more</button>
+  <div class="side"><button>Load more</button></div>
 
   <div class="add">
-    <img src="https://static.criteo.net/design/dt/100888/230512/b3bfcf69368b4dea90aab42bf9d6f7ed_image_ad_970x250.png"
+    <img class="ser"
+      src="https://static.criteo.net/design/dt/100888/230512/b3bfcf69368b4dea90aab42bf9d6f7ed_image_ad_970x250.png"
       alt="">
   </div>
   <div class="add2">
-    <img src="https://www.olx.com.pk/assets/olxMobileApp.f5579f77e849b600ad60857e46165516.webp" alt="">
+    <img class="ph" src="https://www.olx.com.pk/assets/olxMobileApp.f5579f77e849b600ad60857e46165516.webp" alt="">
     <div class="ch">
       <h1 class="hee">TRY THE OLX APP</h1>
       <p class="down">Buy, sell and find just about anything using <br>the app on your mobile.</p>
@@ -391,71 +175,162 @@
     </div>
   </div>
 
-<div class="last">
-  <div class="last1">
-    <h5 class="sm">POPULAR CATEGORIES</h5>
-    <p class="s">Cars<br>
-    Flats for rent<br>
-    Mobile Phones<br>
-    Jobs</p>
-  </div>
-  <div class="last2">
-    <h5 class="sm">TRENDING SEARCHES
-    </h5>
-    <p class="s">Bikes<br>
-    Watches<br>
-    cars<br>
-    dogs</p>
-  </div>
-  <div class="last3">
-    <h5 class="sm">ABOUT US
-    </h5>
-    <p class="s">
-      About Dubizzle Group<br>    
-      OLX Blog<br>
-      Contact Us <br>
-      OLX for Bussiness</p>
-  </div>
-  <div class="last4"><h5 class="sm">OLX
-  </h5>
-  <p class="s">
-    Help<br>    
-    sitemap<br>
-    terms of use<br>
-    privacy policy</p></div>
-  <div class="last5">
-    <div class="brain1">
-      <h5 class="mo">Follow Us</h5>
-      <div class="logo1">
-        <img class="logo" src="https://cdn3.iconfinder.com/data/icons/picons-social/57/46-facebook-64.png">
-        <img class="logo" src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-3-64.png">
-         <img class="logo" src="https://cdn2.iconfinder.com/data/icons/social-media-2421/512/Twitter-64.png">
+  <div class="last">
+    <div class="last1">
+      <h5 class="sm">POPULAR CATEGORIES</h5>
+      <p class="s">Cars<br>
+        Flats for rent<br>
+        Mobile Phones<br>
+        Jobs</p>
+    </div>
+    <div class="last2">
+      <h5 class="sm">TRENDING SEARCHES
+      </h5>
+      <p class="s">Bikes<br>
+        Watches<br>
+        cars<br>
+        dogs</p>
+    </div>
+    <div class="last3">
+      <h5 class="sm">ABOUT US
+      </h5>
+      <p class="s">
+        About Dubizzle Group<br>
+        OLX Blog<br>
+        Contact Us <br>
+        OLX for Bussiness</p>
+    </div>
+    <div class="last4">
+      <h5 class="sm">OLX
+      </h5>
+      <p class="s">
+        Help<br>
+        sitemap<br>
+        terms of use<br>
+        privacy policy</p>
+    </div>
+    <div class="last5">
+      <div class="brain1">
+        <h5 class="mo">Follow Us</h5>
+        <div class="logo1">
+          <img class="logo" src="https://cdn3.iconfinder.com/data/icons/picons-social/57/46-facebook-64.png">
+          <img class="logo" src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-3-64.png">
+          <img class="logo" src="https://cdn2.iconfinder.com/data/icons/social-media-2421/512/Twitter-64.png">
           <img class="logo" src="https://cdn3.iconfinder.com/data/icons/science-and-technology-3-9/20/111-64.png">
+        </div>
+        <img class="control1"
+          src="https://www.olx.com.pk/assets/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg">
+        <img class="control1"
+          src="https://www.olx.com.pk/assets/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg">
+        <img class="control1"
+          src="https://www.olx.com.pk/assets/iconAppGallery_noinline.6092a9d739c77147c884f1f7ab3f1771.svg">
       </div>
-      <img class="control1"
-        src="https://www.olx.com.pk/assets/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg">
-      <img class="control1"
-        src="https://www.olx.com.pk/assets/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg">
-      <img class="control1"
-        src="https://www.olx.com.pk/assets/iconAppGallery_noinline.6092a9d739c77147c884f1f7ab3f1771.svg">
     </div>
   </div>
-</div>
 
-<div class="final"><p class="done">Free Classifieds in Pakistan . © 2006-2023 OLX</p></div>
+  <div class="final">
+    <p class="done">Free Classifieds in Pakistan . © 2006-2023 OLX</p>
+  </div>
 
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  <script>
+
+
+fetch('https://fakestoreapi.com/products').then((data)=>{
+    // console.log(data); ////// abhi json format me he
+    return data.json();///////covert ho gaya object me
+}).then((users)=>{
+    console.log(users[0].price);/////// ye ab ho gaya normalobject
+    let show="";
+    users.map((value)=>{
+        // var see=document.getElementById("main");
+        show+=`
+<div class="under">
+      <img class="in5" class="card-img-top" src="${value.image}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">${"RS: " + value.price}</h5>
+        <p class="card-text">${value.category}</p>
+        
+        <p>${"Rating "+ value.rating.rate}</p>
+      </div>
+</div>`
+    
+      
+    });
+    console.log(show);
+    document.getElementById("main").innerHTML=show;
+})
+
+
+
+  
+
+    var sel;
+    var log;
+    var modal = document.getElementById("mod");
+    function display() {
+      modal.innerHTML = "";
+      modal.innerHTML = `<h4 class="center">Create Your Account</h4><input type="text" class="in1" id="input" placeholder="Enter Name" required><br><input class="in" placeholder="Enter Email" type="email" id="inputemail" required><br><input class="in" placeholder="Enter phone Number" type="number" id="inputphone" required><br><button class="create" onclick="first()">Create Account</button><p class=pa >We won't reveal your phone number to anyone<br> else nor use it to send you spam.</p>`
+
+      // modal.innerHTML = `<button onclick="show()">Sign Up</button>`;
+    }
+
+    // var sign = `<button onclick="show()">Sign Up</button>`;
+
+    var firstInputValue;
+    var secondInputValue;
+    var inputemail;
+    var inputemail2;
+   
+
+    function first() {
+      inputemail = document.getElementById("inputemail").value;
+      firstInputValue = document.getElementById("input").value;
+     
+      modal.innerHTML = "";
+      modal.innerHTML = `<div> <img class="image" src="https://www.olx.com.pk/assets/brandIconLogin_noinline.93e8a1a9cf50902ba5250814f57810ff.svg" alt=""><br>
+         <input class="in" placeholder="Enter name" type="text" id="input1" required"><br><input class="in" placeholder="Enter Email" type="text" id="inputemail2" required><br><button  class="create"  onclick="second()" class="close" data-dismiss="modal" aria-label="Close">login</button>`;
+    }
+
+    function second() {
+      secondInputValue = document.getElementById("input1").value;
+      inputemail2 = document.getElementById("inputemail2").value;
+     
+      compareInputs();
+    }
+     var see2;
+     var see;
+    function compareInputs() {
+      if (firstInputValue === secondInputValue) {
+        if (inputemail === inputemail2) {
+          alert(`You login Successfully ${firstInputValue}`);
+         sel=document.querySelector(".sell").innerHTML=` <a href="./detail.html"> <button class="sell5">+SELL</button></a>`;
+         log= document.getElementById("at").innerHTML=`<span><img class="user" src="https://www.olx.com.pk/assets/iconProfilePicture.7975761176487dc62e25536d9a36a61d.png"><p>${firstInputValue}</p></span>`
+        see2=  localStorage.setItem("username", firstInputValue);
+        see= localStorage.setItem("email", inputemail);
+        } else {
+          alert(`Plz Enter correct email ${secondInputValue}`);
+        }
+
+      }
+      else {
+        alert(`Plz Enter your correct name  ${secondInputValue}`);
+      }
+    }
+    
+  
+
+
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 </body>
-
 </html>
